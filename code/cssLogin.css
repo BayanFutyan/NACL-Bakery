@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    background: url("images/contact - Copy.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*opacity: 1;*/
+    /*transition: opacity 0.5s ease-in;*/
+}
+
+*{
+    font-family: "Poetsen One", sans-serif;
+
+}
+
+form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 420px;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+img[alt="user"]{
+    position: absolute;
+    top:-50px;
+    left: 118px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+h2{
+    color: #A15D30;
+    text-align: center;
+    margin-top: 90px;
+}
+
+input[type="email"],
+input[id="password"] {
+    position: absolute;
+    outline: none;
+    border: none;
+    width: 250px;
+    height: 35px;
+    border-bottom: 2px solid #A15D30;
+    background: none;
+    padding: 5px;
+    color: white;
+
+}
+
+input[type="email"]{
+    top:140px;
+    left: 50px;
+}
+
+input[id="password"]{
+    top:210px;
+    left: 50px;
+}
+::placeholder {
+    color: white;
+}
+
+input[value="Login"]{
+    position: absolute;
+    top:305px;
+    left: 110px;
+    width: 130px;
+    height: 35px;
+    background: #A15D30;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+input[value="Login"]:hover{
+    background: white;
+    color: #A15D30;;
+}
+
+p{
+    position: absolute;
+    top: 370px;
+    left: 35px;
+    color: #9e9999;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+p:hover{
+    color: #A15D30;
+
+}
+a {
+    position: absolute;
+    top: 350px;
+    left: 150px;
+    color: white;
+    /*cursor: pointer;*/
+}
+
+.input-container .icon{
+
+    color: white;
+    font-size: 20px;
+}
+
+#uu{
+    position: absolute;
+    top:152px;
+    left: 24px;
+}
+
+#pp{
+    position: absolute;
+    top:225px;
+    left: 24px;
+}
+
+.error1 img{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    align-items: center;
+    top: 5px;
+    left: 10px;
+}
+
+.error1{
+    width: 400px;
+    height: 100px;
+    background: white;
+    position: absolute;
+    top: 470px;
+    left: 870px;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+}
+
+.error1 p{
+    position: absolute;
+    top: 20px;
+    left: 110px;
+    text-align: center;
+    color: white;
+}
+
+ #togglePassword{
+    top:235px;
+    left: 290px;
+    font-size: 15px;
+    color: white;
+    position: absolute;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px rgba(0, 0, 0, 0.8) inset !important; /* لون الخلفية الجديد */
+    -webkit-text-fill-color: white !important; /* لون النص داخل الحقل */
+}
+

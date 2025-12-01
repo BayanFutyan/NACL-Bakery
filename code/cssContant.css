@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Chivo:ital,wght@0,100..900;1,100..900&family=Cinzel:wght@400..900&family=Edu+TAS+Beginner:wght@400..700&family=Indie+Flower&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Slab:wght@100..900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
+
+.contact-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0rem;
+    padding: 2rem 5rem 0 0;
+    background: #F8F3ED;
+}
+
+.contact-page .text-contact{
+    position: relative;
+    color: #333;
+    font-size: 25px;
+margin-top: 57px;
+    margin-bottom:10px ;
+    margin-left: 650px;
+
+}
+
+
+.contact-page  .image-contact img{
+
+    box-shadow: 0.1rem 0.1rem 0.5rem #333;
+    border-radius: 15px;
+    width: 655px;
+    height: auto;
+    margin-top:20px;
+    margin-left:550px;
+    position: relative;
+
+}
+
+.row {
+box-shadow: 0.1rem 0.1rem 0.5rem #333;
+    border-radius: 10px;
+    width: 350px;
+    height: 372px;
+    margin-top: -375px;
+    margin-left: 50px;
+    padding: 20px; /* إضافة حشو للعناصر الداخلية */
+    box-sizing: border-box; /* لضمان أن الحدود تضاف إلى العرض والارتفاع */
+    align-items: center;
+    text-align: center;
+}
+
+.boxx {
+    width: calc(100% - 20px); /* تقليل عرض الحقول بمقدار حجم الحدود */
+    margin-bottom: 5px; /* إضافة مسافة بين الحقول */
+    padding: 10px; /* إضافة حشو للحقول */
+    box-sizing: border-box; /* لضمان أن الحدود تضاف إلى العرض */
+    border: 1px solid #333;
+
+}
+
+textarea {
+    width: calc(100% - 20px); /* تقليل عرض النص الكبير (textarea) بمقدار حجم الحدود */
+    margin-bottom: 10px; /* إضافة مسافة بين الحقول */
+    padding: 5px; /* إضافة حشو للحقول */
+    box-sizing: border-box; /* لضمان أن الحدود تضاف إلى العرض */
+    border: 1px solid #333;
+    height: 120px;
+}
+
+.btn {
+    width: calc(100% - 20px); /* تقليل عرض زر الإرسال بمقدار حجم الحدود */
+    padding: 10px; /* إضافة حشو للزر */
+    box-sizing: border-box; /* لضمان أن الحدود تضاف إلى العرض */
+    border: 1px solid #333;
+    border-radius: 20px;
+    font-weight: bold;
+
+}
+
+.row p {
+    font-size: 30px; /* تكبير حجم الخط */
+    font-weight: bold; /* جعل الخط عريضًا */
+    color: #333; /* تغيير لون النص */
+    text-transform: uppercase; /* تحويل النص إلى حروف كبيرة */
+    margin-bottom: 20px; /* زيادة المسافة بين الفقرات */
+    text-align: center; /* محاذاة النص في الوسط */
+}
+
+@keyframes slideInFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.contact-page .text-contact h1,
+
+.contact-page .text-contact h2 {
+    opacity: 0;
+    animation: slideInFromBottom 1s ease forwards;
+    animation-delay: calc(0.3s * var(--index));
+}
+
+.contact-page .text-contact h1 {
+    --index: 1;
+}
+
+.contact-page .text-contact h2 {
+    --index: 2;
+}
+
+/* end enimation*/
+
+
+/*footer section start*/
+.footer{
+    box-shadow: 0.1rem 0.1rem 0.5rem #333;
+    width: 1155px;
+    height: 300px;
+    margin-left: 50px;
+    align-items: center;
+    border-radius: 30px;
+
+}
+
+.line{
+    position: absolute;
+    box-shadow: 0.1rem 0.1rem 0.1rem #BE2327;
+    background-color: #BE2327;
+    height:0.1px;
+    width: 900px;
+    margin-left: 127.5px;
+    margin-top:25px ;
+}
+
+.end-container {
+    display: flex; /* استخدام مرونة العناصر للتخطيط */
+    flex-wrap: wrap; /* السماح بالتفاف العناصر إلى السطر التالي */
+    gap: 1.5rem; /* التباعد بين العناصر */
+    margin-left:100px;
+}
+
+/* تحديد الأنماط للعناصر الفردية */
+.end-container .end {
+    flex: 1 1 20rem; /* خصائص المرونة: النمو، الانكماش، الأساس */
+
+}
+
+/* تحديد الأنماط لعناوين العناصر داخل العنصر */
+.end-container .end h3 {
+    color: #333; /* لون النص */
+    font-size: 2.5rem; /* حجم الخط */
+    padding: 1rem 0; /* الهامش الداخلي */
+
+}
+
+
+.end-container .end a{
+    display: block;
+    color: #666; /* لون النص */
+    font-size: 1.5rem; /* حجم الخط */
+    padding-top: 1rem;
+    padding-bottom: 0;
+
+    margin-left: 18px;
+}
+.end-container .end p{
+    display: block;
+    font-size: 1.5rem; /* حجم الخط */
+    padding: 0 0; /* الهامش الداخلي */
+    margin-left: 18px;
+    color: #BE2327;
+}
+
+.end-container .end a:hover{
+    color: #BE2327;
+    text-decoration: underline;
+}
+
+.footer .created{
+    text-align: center;
+    /*padding:1.5rem;*/
+    margin-top: .6rem;
+    padding-top: 2.5rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+.footer .created span{
+    color: #BE2327;
+}

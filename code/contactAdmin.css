@@ -1,0 +1,48 @@
+.contactAdmin-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh; /* يجعل العنصر يمتد لارتفاع الشاشة بالكامل */
+    text-align: center;
+
+}
+
+.text-contact {
+    margin-top: 220px;
+    font-size: 30px;
+    margin-right:850px;
+}
+
+.image-contact img {
+    margin-top: -320px;
+    width: 750px;
+    height: auto;
+    border-radius: 20px;
+    margin-left: 460px;
+}
+
+
+
+.table {
+    width: 90%; /* تعيين عرض الجدول */
+    margin: 20px auto; /* توسيط الجدول بين الهوامش العلوية والسفلية */
+    border-collapse: collapse; /* دمج الحدود بين الخلايا */
+    border: 2px solid #ddd; /* حدود للجدول */
+}
+
+.table th, .table td {
+    padding: 12px; /* هوامش داخلية للخلايا */
+    text-align: left; /* محاذاة النص إلى اليسار */
+    border-bottom: 1px solid #ddd; /* حدود سفلية للصفوف */
+    font-size: 18px;
+}
+
+.table thead{
+    background-color: #f2f2f2; /* لون خلفية العنوان */
+
+}
+
+.table tbody tr:hover {
+    background-color: #f5f5f5; /* تغيير لون الخلفية عند التحويم */
+}

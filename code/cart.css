@@ -1,0 +1,176 @@
+
+/*cartphp*/
+/* توسيط الجدول */
+.product_display {
+    margin: 2rem auto; /* توسيط الجدول في الأفق والعمود */
+}
+
+.product_display .product_display_table {
+    width: 80%; /* عرض الجدول */
+    margin: 0 auto; /* توسيط الجدول داخل عنصره */
+    text-align: center; /* محاذاة النص في الجدول بالوسط */
+}
+
+.product_display .product_display_table thead {
+    background: #DEBF9A; /* لون خلفية رأس الجدول */
+}
+
+.product_display .product_display_table td {
+    padding: 3rem; /* تباعد العناصر داخل الخلايا */
+    font-size: 1.5rem; /* حجم الخط */
+    border: 1px solid #000; /* إضافة حدود للخلايا */
+
+}
+
+/* توسيط العنوان */
+h1.head {
+    text-align: center; /* توسيط العنوان */
+    font-size: 4rem; /* حجم الخط */
+    margin-bottom: 3rem; /* المسافة بين العنوان والجدول */
+    margin-top: 9rem;
+}
+
+.product_display .product_display_table td a{
+    color: black;
+}
+.product_display .product_display_table td a:hover {
+    color: chocolate; /* تغيير لون الأيقونة عند تحويل الماوس عليها */
+    cursor: pointer; /* تغيير المؤشر ليدل على أنه يمكن النقر */
+}
+
+.row1 {
+    box-shadow: 0.1rem 0.1rem 0.5rem #333; /* إضافة ظل للصندوق */
+    border-radius: 10px; /* جعل الزوايا مستديرة */
+    width: 350px; /* تحديد العرض */
+    height: auto; /* تحديد الارتفاع ليكون تلقائيًا بناءً على المحتوى */
+    margin-top: -330px; /* تحديد المسافة العلوية */
+    margin-left: 125px; /* تحديد المسافة اليسرى */
+    padding: 20px; /* إضافة حشو للعناصر الداخلية */
+    box-sizing: border-box; /* لضمان أن الحدود تضاف إلى العرض والارتفاع */
+    text-align: center; /* محاذاة النص في الوسط */
+}
+
+.form-group {
+    display: flex; /* استخدام فليكس بوكس لمحاذاة العناصر بجانب بعضها البعض */
+    align-items: center; /* محاذاة العناصر عموديًا في المنتصف */
+    margin-bottom: 10px; /* إضافة مسافة بين الحقول */
+    width: 100%; /* جعل العرض بنسبة 100% للحاوية */
+}
+
+label {
+    font-size: 14px; /* تحديد حجم الخط */
+    font-weight: bold; /* جعل الخط عريض */
+    color: #333; /* تغيير لون النص */
+    margin-right: 10px; /* إضافة مسافة بين البطاقة والحقل */
+    text-align: left; /* محاذاة النص في اليسار */
+    width: 30%; /* تحديد العرض للبطاقة */
+}
+
+.boxxx {
+    padding: 10px; /* إضافة حشو للحقول */
+    box-sizing: border-box; /* لضمان أن الحدود تضاف إلى العرض */
+    border: 1px solid #333; /* تحديد حدود للصندوق */
+    width: 60%; /* تحديد العرض للصندوق */
+}
+
+.btn1 {
+    padding: 10px; /* إضافة حشو للزر */
+    box-sizing: border-box; /* لضمان أن الحدود تضاف إلى العرض */
+    border: 1px solid #333; /* تحديد حدود للزر */
+    border-radius: 20px; /* جعل الزوايا مستديرة */
+    font-weight: bold; /* جعل الخط عريض */
+    cursor: pointer; /* تغيير شكل المؤشر عند المرور على الزر */
+
+    background-color: #DEBF9A;
+    font-size: 20px;
+    width: 190px;
+    margin-left: 80px;
+}
+
+ .btn1:hover{
+     background-color: #f2f2f2; /* تغيير لون الأيقونة عند تحويل الماوس عليها */
+    cursor: pointer; /* تغيير المؤشر ليدل على أنه يمكن النقر */
+}
+
+.row1 #pp1 {
+    font-size: 30px; /* تكبير حجم الخط */
+    font-weight: bold; /* جعل الخط عريض */
+    color: #333; /* تغيير لون النص */
+    text-transform: uppercase; /* تحويل النص إلى حروف كبيرة */
+    margin-bottom: 30px; /* زيادة المسافة بين الفقرات */
+    text-align: center; /* محاذاة النص في الوسط */
+    margin-left: 70px;
+}
+
+.img-cart{
+
+    margin-left: 540px;
+    width: 600px;
+    height: auto;
+    border-radius: 30px;
+}
+
+
+
+
+#thankYouPopup {
+    display: none; /* إخفاء رسالة الشكر افتراضيًا */
+    position: fixed; /* تثبيت النافذة في مكانها */
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 110px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    transform: translate(-50%, -50%); /* نقل النافذة إلى وسط الشاشة */
+    background: #F8F3ED; /* لون خلفية النافذة */
+    padding: 20px; /* إضافة حشو داخلي */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* إضافة ظل */
+    border-radius: 10px; /* جعل الزوايا مستديرة */
+    z-index: 1001; /* التأكد من ظهور النافذة فوق الغطاء */
+
+}
+
+#image_cart{
+    width: 100px;
+    height: auto;
+}
+
+.nummm{
+    background: #DEBF9A;
+    height: 40px;
+    align-items: center;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.row1{
+    height: 320px;
+}
+
+.row1 input[type="submit"]{
+   height: 40px;
+}
+
+#done{
+    font-size: 16px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 8px;
+}
+
+.price12 {
+    font-weight: normal;
+    padding-top: 0.5rem;
+    font-size: 1rem;
+    text-decoration: line-through;
+    color:#BE2327;
+}
+
+.price {
+
+    color:black;
+    font-weight: normal;
+    padding-top: 1rem;
+    font-size: 16px;
+}

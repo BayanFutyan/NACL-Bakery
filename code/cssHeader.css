@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+:root{
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+body{
+    background: #F8F3ED;
+}
+*{
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;padding: 0;
+    box-sizing:border-box;
+    text-decoration:none;
+    outline:none;border:none ;
+    transition: all,2s,linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+header{
+    position:fixed;
+    top:0;left:0;right: 0;
+    background:#DEBF9A;
+    padding:1rem 7% ;
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    z-index:1000 ;
+    box-shadow:var(--box-shadow);
+}
+header .icon{
+    position: relative ;
+    transition: transform .5s ;
+}
+header .search-form {
+    position: absolute;
+    top:115%;right: 7%;
+    background: #fff;
+    width: 30rem;
+    height: 4rem;
+    display:flex;
+    align-items: center;
+
+}
+
+.tap .active{
+    color: saddlebrown;
+    background: #F8F3ED;
+}
+
+
+
+header .search-form input{
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem;
+    color: black;
+    padding:1rem;
+    text-transform: none;
+}
+
+header .search-form label{
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    color: black;
+
+}
+header .search-form label:hover{
+    color: #DEBF9A;
+}
+
+header  img{
+    float: left;
+    height: 100%;
+
+}
+
+
+header .tap a{
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    color: black;
+    margin: 0  4rem ;
+}
+
+header .tap a:hover{
+    color: saddlebrown;
+    background: #F8F3ED;
+}
+
+header .icon i,
+header .icon a{
+    cursor: pointer;
+    margin-left: 0.5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: black;
+    border-radius: 50%;
+    background: #eee;
+}
+
+header .icon i:hover,
+header .icon a:hover{
+    color: saddlebrown;
+    background: #F8F3ED;
+    transform: rotate(360deg);
+    transition: transform 0.5s ease-in-out;
+}
+
+header .icon #bars{
+    display: none;
+}
+
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding:1rem 2rem;
+
+    }
+}
+
+@media (max-width: 768px){
+    header .icon #bars {
+        display: inline-block;
+    }
+
+    header .tap {
+        position:absolute;
+        top:100% ;
+        left:0;
+        right:0;
+        background:#fff;
+        border-top:0.1rem solid rgba(0,0,0,0.2);
+        border-bottom:0.1rem solid rgba(0,0,0,0.2);
+        padding:1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0,0 0);
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .tap.active {
+       clip-path:polygon(0 0, 100% 0, 100% 100%,0% 100%) ;
+    }
+
+
+    header .tap a {
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #F8F3ED;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 50%;
+    }
+
+}
+
+
+header  .icon #spanshop{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color:#eee;
+    justify-content: center;
+    align-items: center;
+  color: black;
+    border-radius: 50%;
+    margin-left: 140px;
+    margin-top:-10px;
+    position: absolute;
+
+}
+
+header  .icon #spanshopfav{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color:#eee;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border-radius: 50%;
+    margin-left: 86px;
+    margin-top:-10px;
+    position: absolute;
+
+}
+
+
+header  .icon #spanhome{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color:#eee;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border-radius: 50%;
+    margin-left: 87px;
+    margin-top:-10px;
+    position: absolute;
+
+}
+
+header  .icon #spanhomefav{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color:#eee;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border-radius: 50%;
+    margin-left: 33px;
+    margin-top:-10px;
+    position: absolute;
+
+}
+
+
+
+
+/*start cart*/
+.cartTab {
+    width: 400px;
+    background-color: #eee;
+    z-index: 3;
+    position: fixed;
+    inset: 0 -400px 0 auto; /* البداية الافتراضية، خارج الشاشة */
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+    overflow: hidden;
+}
+
+body.showCart .cartTab {
+    inset: 0 0 0 auto; /* عندما تكون الفئة showCart مضافة إلى body */
+}
+body .showCart .icon{
+    transform: translateX(-250px);
+}
+.cartTab h1 {
+    padding: 20px;
+    margin-top: 70px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.cartTab .btt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+
+}
+
+.cartTab .btt button {
+    background-color: #DEBF9A;
+    border: none;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    color: black;
+    font-size: 20px;
+}
+
+.cartTab .btt button:hover {
+    background-color: #d4aa77;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    color: #333; /* لون الرمز */
+    font-size: 24px; /* حجم الرمز */
+}
+
+.close-btn:hover {
+    color: #555; /* تغيير لون الرمز عند التحويم */
+}
+
+#image_cart {
+    width: 80px;
+    height: auto;
+    margin-left: 15px;
+}
+
+#table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+#table td {
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.ListCart {
+    overflow: auto;
+
+    height: 400px;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+/*end cart*/
+
+
+.email{
+    position: relative;
+    margin-right: -50px;
+    font-size: 15px;
+    height: 30px;
+    color: black;
+    text-decoration: underline;
+    align-items: center;
+
+}
+.email:hover{
+    color:saddlebrown;
+}
+
+/* start of account : */
+
+.account{
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display:none ;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-content{
+
+    position: absolute;
+    top: 340px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 450px;
+    background-color:#fff2e5;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.close2{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    box-shadow: 6px 6px 29px -4px rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+
+
+.account-content h2{
+    color: black;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25px;
+}
+.account-content input[type="text"],
+.account-content input[type="password"],
+.account-content input[type="email"]{
+    position: absolute;
+    outline: none;
+    border: none;
+    width: 200px;
+    height: 35px;
+    border-bottom: 2px solid #A15D30;
+    background: none;
+    padding: 5px;
+    color: black;
+}
+
+.account-content input[type="email"]{
+    top:80px;
+    left: 90px;
+}
+
+.account-content input[type="text"]{
+    top:140px;
+    left: 90px;
+}
+
+
+.account-content input[id="password"]{
+    top:200px;
+    left: 90px;
+}
+
+
+
+.account-content input[id="location"]{
+    top:260px;
+    left: 90px;
+}
+
+.account-content input[id="phone"]{
+    top:320px;
+    left: 90px;
+}
+::placeholder {
+    color: black;
+}
+
+.account-content input[value="EDIT"]{
+    position: absolute;
+    top:400px;
+    left: 120px;
+    width: 130px;
+    height: 35px;
+    background: #A15D30;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+.accoun t-contentinput[value="EDIT"]:hover{
+    background: white;
+    color:#A15D30;
+}
+
+
+
+.account-content .input-container .icon{
+    color: saddlebrown;
+    font-size: 20px;
+    position: absolute;
+}
+
+.account-content #i1{
+    top:150px;
+    left: 62px;
+}
+
+.account-content #i3{
+
+    top:90px;
+    left: 62px;
+}
+.account-content #i2{
+    top:210px;
+    left: 62px;
+}
+
+.account-content #togglePassword{
+    top:210px;
+    left: 270px;
+    font-size: 15px;
+    color: #555555;
+    position: absolute;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+
+.account-content #i4{
+    top:270px;
+    left: 62px;
+}
+
+.account-content #i5{
+    top:330px;
+   left:62px;
+}
+
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #fff2e5 inset !important; /* لون الخلفية الجديد */
+    -webkit-text-fill-color: #000000 !important; /* لون النص داخل الحقل */
+}
+

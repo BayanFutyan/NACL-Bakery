@@ -1,0 +1,649 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Chivo:ital,wght@0,100..900;1,100..900&family=Cinzel:wght@400..900&family=Edu+TAS+Beginner:wght@400..700&family=Indie+Flower&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Slab:wght@100..900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Lobster&family=Permanent+Marker&display=swap');
+
+.shop-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0rem;
+    padding: 2rem 5rem 0 0;
+    background: #F8F3ED;
+    z-index: 2;
+}
+
+.shop-page .text-shop {
+    position: relative;
+    color: #C14D1E;
+    font-size: 1rem;
+    text-align: center;
+    left: 100px;
+    margin: 75px 35px 10px 25px;
+}
+
+.shop-page .image-shop img {
+    position: relative;
+    margin-top: 120px;
+    border-radius: 40px;
+    width: 600px;
+}
+
+
+.filter{
+    position:fixed;
+    border: solid 1px #BE2327;
+    /*box-shadow: 0.2rem 0.2rem 0.6rem #333;*/
+    border-radius: 20px;
+    width: 250px;
+    height:400px ;
+    top: 600px;
+    margin-left: 30px;
+    /*margin-top:10px ;*/
+    /*padding-left:15px ;*/
+    padding-top: 15px;
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,.1);
+    /*border: .1rem solid  rgba(0,0,0,.1);*/
+}
+
+.filter p,
+.filter h1,
+.filter input,
+.filter label {
+    position: relative;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 2rem;
+    /*font-family: "Concert One", sans-serif;*/
+    /*font-weight: 400;*/
+    /*font-style: normal;*/
+}
+
+
+.filter label:hover {
+    color: #BE2327; /* تغيير لون النص عند تقريب الماوس */
+}
+
+.price-input {
+    height: 50px;
+    /*width: 100%;*/
+    display: flex;
+    margin: 0 0 0;
+    align-items: center;
+
+}
+
+.price-input .field{
+    height: 35px;
+    /*width: 100%;*/
+    display: flex;
+    align-items: center;
+    margin-right: 0px; /* يمكنك تعديل هذه القيمة حسب التباعد المطلوب */
+    margin-top: 5px;
+}
+
+
+.field input{
+    width: 35px;
+
+    /*height: 100%;*/
+
+    outline: none;
+    font-size: 19px;
+    text-align: left;
+    margin-left:0px;
+    border-radius: 5px;
+    background: #F8F3ED;
+    -moz-appearance:textfield;
+}
+
+
+.price-input .separator{
+
+    width: 25px;
+    display: flex;
+    font-size: 19px;
+    align-items: center;
+    padding-right:10px;
+    margin-top: 10px;
+}
+.field .currency {
+
+    position: relative;
+    margin-top:5px;
+
+    font-size: 19px;
+    text-align: center;
+    margin-left:0px;
+    background: none;
+
+}
+
+.price-input p {
+
+    margin-top: 22px;
+}
+
+.range{
+    margin-top: 30px;
+
+    height: 10px;
+}
+
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+.range-input {
+    position: relative;
+    height: 25px;
+
+}
+.range-input input{
+    position: absolute;
+    top: -6px;
+    height: 5px;
+    width: 86%;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+}
+input[type="range"]::-webkit-slider-thumb{
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    pointer-events: auto;
+    -webkit-appearance: none;
+    background: #BE2327;
+    margin-top: -6px;
+
+}
+.slider{
+    height:5px;
+    border-radius: 5px;
+    background: #ddd;
+    position: relative;
+    margin: 0 20px;
+    width: 200px;
+
+}
+.slider .pogress {
+    height: 5px;
+    left: 3%;
+    right: 3%;
+    position: absolute;
+    border-radius: 5px;
+    background: #BE2327;
+}
+
+
+.sortby{
+    position: absolute;
+    border:1.5px solid  black;
+    width: 200px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 1000px;
+    border-radius: 25px;
+    font-size: 18px;
+    text-align: center;
+    color:  black;
+    background: #efd0a4;
+}
+.sortby option{
+    position: absolute;
+    font-size: 18px;
+    margin-top: 5px ;
+    margin-left: 7px ;
+    text-align: center;
+}
+
+
+
+.prodocts .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.prodocts .box-container .box{
+    flex: 1 1 24%;
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    border: .1rem solid  rgba(0,0,0,.1);
+    position: relative;
+
+}
+
+
+
+.prodocts .box-container .box .image-features{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+
+.prodocts .box-container .box .image-features img {
+    height: 25rem;
+}
+
+.prodocts .box-container .box:hover .image-features img {
+    transform: scale(1.1);
+}
+
+.icon2 {
+    display: flex;
+    justify-content: center; /* توزيع العناصر بالتساوي */
+    padding-top: 10px; /* هامش للأعلى */
+}
+
+.icon2 img {
+    width: 25px; /* عرض الصورة */
+    height: 25px; /* ارتفاع الصورة */
+}
+
+.icon2 a {
+    font-size: 13px;
+    display: inline-flex; /* جعل الروابط تظهر على شكل مربعات */
+    justify-content: center; /* توسيط الأيقونات داخل المربع */
+    align-items: center; /* توسيط الأيقونات عمودياً */
+    width: 35px; /* عرض المربع */
+    height: 35px; /* ارتفاع المربع */
+    background-color: #BE2327; /* لون الخلفية */
+    border-radius: 5px; /* تدوير الزوايا */
+    color: white; /* لون الأيقونات */
+    margin: 0 5px; /* هامش بين الأيقونات */
+    margin-top: 10px; /* تحريك الأيقونات لأسفل بقيمة 10 بكسل */
+}
+
+
+.prodocts .box-container .box .image-features .icon2 a:hover {
+    background: #504C62;
+}
+.prodocts .box-container .box .content-features {
+    padding: 2rem;
+    text-align: center;
+}
+.prodocts .box-container .box .content-features h2{
+
+    color: #333;
+    font-size: 15px;
+}
+.prodocts .box-container .box .content-features .price {
+
+    color:#BE2327;
+    font-weight: normal;
+    padding-top: 1rem;
+    font-size: 16px;
+}
+
+.price12 {
+    font-weight: normal;
+    padding-top: 0.5rem;
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+
+.pppp{
+
+    width: 900px;
+    height: 100%;
+    margin-left: 300px;
+    margin-top: 100px;
+
+}
+
+
+
+/*footer section start*/
+.footer{
+    box-shadow: 0.1rem 0.1rem 0.5rem #333;
+    width: 1155px;
+    height: 300px;
+    margin-left: 50px;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.line{
+    position: absolute;
+    box-shadow: 0.1rem 0.1rem 0.1rem #BE2327;
+    background-color: #BE2327;
+    height:0.1px;
+    width: 900px;
+    margin-left: 80px;
+    margin-top:25px ;
+}
+
+.end-container {
+    display: flex; /* استخدام مرونة العناصر للتخطيط */
+    flex-wrap: wrap; /* السماح بالتفاف العناصر إلى السطر التالي */
+    gap: 1.5rem; /* التباعد بين العناصر */
+    margin-left:50px;
+}
+
+/* تحديد الأنماط للعناصر الفردية */
+.end-container .end {
+    flex: 1 1 20rem; /* خصائص المرونة: النمو، الانكماش، الأساس */
+
+}
+
+/* تحديد الأنماط لعناوين العناصر داخل العنصر */
+.end-container .end h3 {
+    color: #333; /* لون النص */
+    font-size: 2.5rem; /* حجم الخط */
+    padding: 0 0; /* الهامش الداخلي */
+
+}
+
+
+.end-container .end a{
+    display: block;
+    color: #666; /* لون النص */
+    font-size: 1.5rem; /* حجم الخط */
+    padding-top: 1rem;
+    padding-bottom: 0;
+
+    margin-left: 18px;
+}
+.end-container .end p{
+    display: block;
+    font-size: 1.5rem; /* حجم الخط */
+    padding: 0 0; /* الهامش الداخلي */
+    margin-left: 18px;
+    color: #BE2327;
+}
+
+.end-container .end a:hover{
+    color: #BE2327;
+    text-decoration: underline;
+}
+
+.footer .created{
+    text-align: center;
+    /*padding:1.5rem;*/
+    margin-top: .6rem;
+    padding-top: 2.5rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+.footer .created span{
+    color: #BE2327;
+}
+
+
+
+/* start of admin : */
+
+.pop{
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display:none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pop10{
+
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display:none;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop-content{
+    height: 450px;
+    width: 300px;
+    background: #fff2e5;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    top:45px
+}
+
+.pop .pop-content{
+
+    height: 350px;
+    width: 500px;
+    top:170px;
+    left: 400px;
+}
+
+.close{
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    box-shadow: 6px 6px 29px -4px rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+.close5{
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    box-shadow: 6px 6px 29px -4px rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+
+.pop-content  input[type="text"]{
+    position: absolute;
+    outline: none;
+    border: none;
+    width: 200px;
+    height: 35px;
+    border-bottom: 2px solid  #BE2327;
+    background: none;
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+    color: black;
+}
+
+#b1{
+    top:80px;
+    left: 50px;
+}
+
+#b2{
+    top:140px;
+    left: 50px;
+}
+
+.Product-type{
+    top:200px;
+    left: 50px;
+    position: absolute;
+    outline: none;
+    border: none;
+    width: 200px;
+    height: 35px;
+    border-bottom: 2px solid #BE2327;
+    background: none;
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+    color: black;
+}
+
+.salee label {
+    font-size: 14px; /* حجم الخط */
+    margin-top: 4px;
+}
+
+.pop-content h1{
+    text-align: center;
+    color: #BE2327;
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+.pop .salee{
+    top:200px;
+    left: 45px;
+    position: absolute;
+}
+
+.pop10 .salee{
+    top:260px;
+    left: 50px;
+    position: absolute;
+}
+
+/* هذا الكود يتحكم في تصميم الدوائر من النوع radio */
+input[type="radio"] {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    transition: border 0.3s ease-in-out;
+    margin-left: 23px;
+}
+
+input[type="radio"]:checked {
+    border: 6px solid #BE2327; /* تغيير لون الدائرة إلى أحمر عند التحديد */
+}
+
+/* تعديل اللون الأساسي للدائرة إلى أحمر */
+input[type="radio"]::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    /*background-color: red; !* اللون الأحمر *!*/
+}
+
+.pop-content input[type="file"] ,
+.pop-content input[type="submit"]{
+    left: 60px;
+    position: absolute;
+}
+
+.pop-content input[type="file"]{
+    top: 350px;
+    margin-top: 6px;
+}
+
+.pop-content input[type="submit"]{
+    top:400px;
+    width: 80px;
+    height: 30px;
+    display: inline-block;
+    margin-left: 55px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+
+    background-color: rgba(190, 35, 39 , 0.8);
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.pop input[type="submit"]{
+    top:300px;
+}
+
+.salee h1{
+    margin-bottom: 8px;
+    margin-left: 5px;
+}
+
+
+/*end of admin */
+
+
+.view {
+
+    display: none; /* إخفاء رسالة الشكر افتراضيًا */
+    position: fixed; /* تثبيت النافذة في مكانها */
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 400px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    transform: translate(-50%, -50%); /* نقل النافذة إلى وسط الشاشة */
+    background: #F8F3ED; /* لون خلفية النافذة */
+    padding: 20px; /* إضافة حشو داخلي */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* إضافة ظل */
+    border-radius: 10px; /* جعل الزوايا مستديرة */
+    z-index: 1001; /* التأكد من ظهور النافذة فوق الغطاء */
+}
+
+.close-icon{
+    margin-left: 440px;
+
+}
+
+#thankYouPopup {
+    display: none; /* إخفاء رسالة الشكر افتراضيًا */
+    position: fixed; /* تثبيت النافذة في مكانها */
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 110px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    transform: translate(-50%, -50%); /* نقل النافذة إلى وسط الشاشة */
+    background: #F8F3ED; /* لون خلفية النافذة */
+    padding: 20px; /* إضافة حشو داخلي */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* إضافة ظل */
+    border-radius: 10px; /* جعل الزوايا مستديرة */
+    z-index: 1001; /* التأكد من ظهور النافذة فوق الغطاء */
+
+}
+
+
+#add{
+    margin-left: -270px;
+    margin-top: 70px;
+}
+
+#add12{
+    display: inline-block;
+    padding: 7px 20px;
+    margin-left: 30px;
+    margin-top: 60px;
+    box-shadow: 0.1rem 0.1rem 0.5rem #9e9999;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(190, 35, 39, 0.8);
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+}
+
+#edit7{
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+    margin-left: 260px;
+    border-radius: 10px;
+}
+
+
+

@@ -1,0 +1,546 @@
+section{
+    padding: 2rem 5rem ;
+    background: #F8F3ED;
+}
+
+.home  .slide{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:2rem;
+    padding-top:6.5rem;
+
+}
+.home  .slide .image {
+    order: 1;
+}
+
+.home  .slide .content{
+
+    color: saddlebrown;
+    font-size: 4rem;
+    padding: 5rem 10rem;
+    text-align: center;
+
+}
+
+
+section  .slide .content button {
+
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+    padding: 1.5rem 3rem;
+    color: black;
+    background: #DEBF9A;
+}
+section  .slide .content button:hover{
+    background: #d4aa77 ;
+}
+
+
+
+.home .content h3,
+.home .content p,
+.home .content button {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.home .content h3 {
+    animation-delay: 0.3s;
+}
+
+.home .content p {
+    animation-delay: 0.6s;
+}
+
+.home .content button {
+    animation-delay: .9s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card{
+
+    flex: 1 1 24%;
+    box-shadow: 0 4px 8px #DEBF9A;
+    transition: 0.3s;
+    width: 32rem;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* لضمان أن المحتوى يتجه عموديًا */
+    align-items: center; /* يوسّط المحتوى أفقيًا داخل البطاقة */
+    justify-content: center; /* يوسّط المحتوى عموديًا داخل البطاقة */
+}
+
+.text-card{
+    padding: 10px 16px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.image1{
+    width: 27rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top:3rem ;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.conta{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /*justify-content: center;*/
+    /*margin-top:100% ;*/
+    justify-content: center;
+}
+
+.sec-text{
+    padding: 30px 30px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.sale1 {
+    width: 35rem;
+    margin-left: 8rem;
+    margin-top:5rem ;
+}
+.sale{
+    display: flex;
+    flex-wrap: wrap;
+}
+.text2{
+/*/color: saddlebrown;*/
+color: chocolate;
+    padding: 100px 100px;
+    text-align: center;
+    font-size: 50px;
+}
+.style-img1 img {
+    position: relative;
+    border: 3px solid saddlebrown;
+    border-radius: 50px;
+}
+.img1-text{
+    position: relative;
+    top: -250px;
+    left:  100px;
+    text-align: center;
+}
+
+.img1-text  p,h1{
+    font-size: 25px;
+}
+
+
+
+.mybutton {
+    position:relative ;
+    top: 20px;
+    left:20px ;
+    width: 120px; /* عرض الزر */
+    height: 40px; /* ارتفاع الزر */
+    font-size: 15px; /* حجم النص داخل الزر */
+    border-radius: 15px;/* جعل الحواف مستديرة */
+    background-color:  #e68c4d;
+    color: white;       /* لون النص */
+}
+.mybutton:hover {
+    background-color:chocolate; /* لون الخلفية عند التمرير */
+}
+h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+
+}
+
+/* استخدام Flexbox لتوزيع الروابط في الوسط وتوفير التباعد */
+.type {
+    display: flex;
+    justify-content: center; /* تمركز الروابط أفقيًا في المنتصف */
+    gap: 40px; /* المسافة بين الروابط */
+    font-size: 18px;
+
+
+}
+.type a{
+    color:#BE2327;
+    font-family: "Ibarra Real Nova", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+
+}
+.type a:hover {
+    text-decoration: underline; /* إضافة خط تحت النص عند التمرير */
+    color: #504C62; /* تغيير لون النص إلى الأحمر عند التمرير */
+}
+
+
+.prodocts .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.prodocts .box-container .box{
+    flex: 1 1 24%;
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    border: .1rem solid  rgba(0,0,0,.1);
+    position: relative;
+
+}
+
+
+
+section div .OurFeatures{
+    text-decoration:underline;
+    color:#504C62
+}
+.prodocts .box-container .box .image-features{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+
+.prodocts .box-container .box .image-features img {
+    height: 25rem;
+}
+
+.prodocts .box-container .box:hover .image-features img {
+    transform: scale(1.1);
+}
+
+.icon2 {
+    display: flex;
+    justify-content: center; /* توزيع العناصر بالتساوي */
+    padding-top: 10px; /* هامش للأعلى */
+}
+
+.icon2 img {
+    width: 25px; /* عرض الصورة */
+    height: 25px; /* ارتفاع الصورة */
+}
+
+.icon2 a {
+    font-size: 13px;
+    display: inline-flex; /* جعل الروابط تظهر على شكل مربعات */
+    justify-content: center; /* توسيط الأيقونات داخل المربع */
+    align-items: center; /* توسيط الأيقونات عمودياً */
+    width: 35px; /* عرض المربع */
+    height: 35px; /* ارتفاع المربع */
+    background-color: #BE2327; /* لون الخلفية */
+    border-radius: 5px; /* تدوير الزوايا */
+    color: white; /* لون الأيقونات */
+    margin: 0 5px; /* هامش بين الأيقونات */
+    margin-top: 10px; /* تحريك الأيقونات لأسفل بقيمة 10 بكسل */
+}
+
+
+.prodocts .box-container .box .image-features .icon2 a:hover {
+    background: #504C62;
+}
+.prodocts .box-container .box .content-features {
+    padding: 2rem;
+    text-align: center;
+}
+.prodocts .box-container .box .content-features h2{
+    /*font-size:2.5rem;*/
+    color: #333;
+    font-size: 15px;
+}
+.prodocts .box-container .box .content-features .price {
+    /*font-size:2.5rem;*/
+    color:#BE2327;
+    font-weight: normal;
+    padding-top: 1rem;
+    font-size: 15px;
+}
+
+
+
+
+
+/*footer section start*/
+.footer{
+    box-shadow: 0.1rem 0.1rem 0.5rem #333;
+    width: 1155px;
+    height: 300px;
+    margin-left: 50px;
+    align-items: center;
+    border-radius: 30px;
+
+}
+
+.line{
+    position: absolute;
+    box-shadow: 0.1rem 0.1rem 0.1rem #BE2327;
+    background-color: #BE2327;
+    height:0.1px;
+    width: 900px;
+    margin-left: 80px;
+    margin-top:25px ;
+}
+
+.end-container {
+    display: flex; /* استخدام مرونة العناصر للتخطيط */
+    flex-wrap: wrap; /* السماح بالتفاف العناصر إلى السطر التالي */
+    gap: 1.5rem; /* التباعد بين العناصر */
+    margin-left:50px;
+}
+
+/* تحديد الأنماط للعناصر الفردية */
+.end-container .end {
+    flex: 1 1 20rem; /* خصائص المرونة: النمو، الانكماش، الأساس */
+
+}
+
+/* تحديد الأنماط لعناوين العناصر داخل العنصر */
+.end-container .end h3 {
+    color: #333; /* لون النص */
+    font-size: 2.5rem; /* حجم الخط */
+    padding: 0 0; /* الهامش الداخلي */
+
+}
+
+
+.end-container .end a{
+    display: block;
+    color: #666; /* لون النص */
+    font-size: 1.5rem; /* حجم الخط */
+    padding-top: 1rem;
+    padding-bottom: 0;
+
+    margin-left: 18px;
+}
+.end-container .end p{
+    display: block;
+    font-size: 1.5rem; /* حجم الخط */
+    padding: 0 0; /* الهامش الداخلي */
+    margin-left: 18px;
+    color: #BE2327;
+}
+
+.end-container .end a:hover{
+    color: #BE2327;
+    text-decoration: underline;
+}
+
+.footer .created{
+    text-align: center;
+    /*padding:1.5rem;*/
+    margin-top: .6rem;
+    padding-top: 2.5rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+.footer .created span{
+    color: #BE2327;
+}
+
+
+
+/* start of admin : */
+
+.pop{
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display:none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pop-content{
+    height: 450px;
+    width: 300px;
+    background: #fff2e5;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    top:45px
+}
+
+.pop .pop-content{
+
+    height: 350px;
+    width: 500px;
+    top:170px;
+    left: 400px;
+}
+
+.close{
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    box-shadow: 6px 6px 29px -4px rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+.close5{
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    box-shadow: 6px 6px 29px -4px rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+
+.pop-content  input[type="text"]{
+    position: absolute;
+    outline: none;
+    border: none;
+    width: 200px;
+    height: 35px;
+    border-bottom: 2px solid  #BE2327;
+    background: none;
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+    color: black;
+}
+
+#b1{
+    top:80px;
+    left: 50px;
+}
+
+#b2{
+    top:140px;
+    left: 50px;
+}
+
+.Product-type{
+    top:200px;
+    left: 50px;
+    position: absolute;
+    outline: none;
+    border: none;
+    width: 200px;
+    height: 35px;
+    border-bottom: 2px solid #BE2327;
+    background: none;
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+    color: black;
+}
+
+.salee label {
+    font-size: 14px; /* حجم الخط */
+    margin-top: 4px;
+}
+
+.pop-content h1{
+    text-align: center;
+    color: #BE2327;
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+.pop .salee{
+    top:200px;
+    left: 45px;
+    position: absolute;
+}
+
+
+/* هذا الكود يتحكم في تصميم الدوائر من النوع radio */
+input[type="radio"] {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    transition: border 0.3s ease-in-out;
+    margin-left: 23px;
+}
+
+input[type="radio"]:checked {
+    border: 6px solid #BE2327; /* تغيير لون الدائرة إلى أحمر عند التحديد */
+}
+
+/* تعديل اللون الأساسي للدائرة إلى أحمر */
+input[type="radio"]::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    /*background-color: red; !* اللون الأحمر *!*/
+}
+
+.pop-content input[type="file"] ,
+.pop-content input[type="submit"]{
+    left: 60px;
+    position: absolute;
+}
+
+.pop-content input[type="file"]{
+    top: 350px;
+    margin-top: 6px;
+}
+
+.pop-content input[type="submit"]{
+    top:400px;
+    width: 80px;
+    height: 30px;
+    display: inline-block;
+    margin-left: 55px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+
+    background-color: rgba(190, 35, 39 , 0.8);
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.pop input[type="submit"]{
+    top:300px;
+}
+
+.salee h1{
+    margin-bottom: 8px;
+    margin-left: 5px;
+}
+
+#edit7{
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+    margin-left: 260px;
+    border-radius: 10px;
+}
+
+/*end of admin */
+
